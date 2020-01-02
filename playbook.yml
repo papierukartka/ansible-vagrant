@@ -7,4 +7,9 @@
       file:
         path: ~/healthcheck
         state: touch
+    - name: become!
+      become: yes
+      package:
+        name: joe
+        state: present
         
