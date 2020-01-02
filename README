@@ -2,16 +2,19 @@ what
 =========
 This is a playground for Ansible.
 
+
 usage
 =========
 vagrant up
 ansible-playbook playbook.yml
 vagrant destroy
 
+
 dependencies
 =========
 vagrant
 ansible
+
 
 details
 =========
