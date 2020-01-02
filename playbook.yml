@@ -1,0 +1,10 @@
+---
+- hosts: vagrant_vm
+  tasks:
+    - name: ping
+      ping:
+    - name: create test file
+      file:
+        path: ~/healthcheck
+        state: touch
+        

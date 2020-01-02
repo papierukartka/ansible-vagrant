@@ -1,0 +1,17 @@
+what
+=========
+This is a standalone playground for Ansible.
+
+
+start
+=========
+vagrant up
+ansible-playbook playbook.yml
+
+
+details
+=========
+there's a few things set up:
+- Vagrantfile: set fixed ip address
+- ansible.cfg: point to inventory to hosts file, no cows
+- hosts file: specified ssh private_key, user, port
