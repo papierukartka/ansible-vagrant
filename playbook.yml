@@ -1,15 +1,18 @@
 ---
-- hosts: vagrant_vm
+- hosts: all
   tasks:
     - name: ping
       ping:
+
     - name: create test file
       file:
         path: ~/healthcheck
         state: touch
-    - name: become!
+
+    - name: Create new user
       become: yes
-      package:
-        name: joe
-        state: present
-        
+      user:
+        append: yes
+        name: "smth"
+        groups: sudo
+        generate_ssh_key: yes
